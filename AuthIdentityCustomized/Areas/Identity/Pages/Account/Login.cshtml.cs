@@ -57,6 +57,12 @@ namespace AuthIdentityCustomized.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            //all
+            if (User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("/Home");
+            }
+
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
                 ModelState.AddModelError(string.Empty, ErrorMessage);

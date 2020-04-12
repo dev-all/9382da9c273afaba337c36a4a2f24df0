@@ -13,7 +13,8 @@ namespace AuthIdentityCustomized.Areas.Identity.Data
         //[ForeignKey("IdPersona")]
         //public Personas Personas { get; set; }
         //public int IdPersona { get; set; }
-               
-        public bool Google { get; set; }
+        
+        public bool Externo { get; set; }
+
     }
 }

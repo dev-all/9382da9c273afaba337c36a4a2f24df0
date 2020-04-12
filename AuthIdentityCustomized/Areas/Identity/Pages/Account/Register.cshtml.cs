@@ -46,6 +46,10 @@ namespace AuthIdentityCustomized.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            [Required]            
+            [Display(Name = "Externo")]
+            public bool Externo { get; set; }
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -65,6 +69,11 @@ namespace AuthIdentityCustomized.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            //all
+            if (User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("/Home");
+            }
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -75,7 +84,7 @@ namespace AuthIdentityCustomized.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, Externo = Input.Externo };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

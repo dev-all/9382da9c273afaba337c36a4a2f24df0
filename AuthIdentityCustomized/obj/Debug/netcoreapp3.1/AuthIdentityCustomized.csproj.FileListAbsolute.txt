@@ -188,6 +188,6 @@ F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\Au
 F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
 F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
-F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\AuthIdentityCustomized.csprojAssemblyReference.cache
 F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\AuthIdentityCustomized.csproj.CoreCompileInputs.cache
 F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\AuthIdentityCustomized.genruntimeconfig.cache
+F:\.Net Core\NetCoreIdentity\NetCoreIdentityCustomized\AuthIdentityCustomized\AuthIdentityCustomized\obj\Debug\netcoreapp3.1\AuthIdentityCustomized.csprojAssemblyReference.cache

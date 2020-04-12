@@ -20,7 +20,17 @@ namespace AuthIdentityCustomized.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("AuthIdentityContextConnection")));
 
-                services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<ApplicationUser>(options => {
+                    options.SignIn.RequireConfirmedAccount = true;
+                options.User.RequireUniqueEmail = true;
+                //options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireDigit = true;
+
+                })
                     .AddEntityFrameworkStores<AuthIdentityContext>();
             });
         }
